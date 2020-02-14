@@ -3,15 +3,15 @@ import 'firebase/database';
 import 'firebase/auth';
 
 const config = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  databaseURL: process.env.FIREBASE_DATABASE_URL,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.FIREBASE_APP_ID,
-  measurementId: process.env.FIREBASE_MEASURMENT_ID
-};
+  apiKey: "AIzaSyD3E0th-mBNYu5TMHGbezDuzKJC1tz69SA",
+  authDomain: "search-f4722.firebaseapp.com",
+  databaseURL: "https://search-f4722.firebaseio.com",
+  projectId: "search-f4722",
+  storageBucket: "search-f4722.appspot.com",
+  messagingSenderId: "216675960592",
+  appId: "1:216675960592:web:f876f30123acd9f6dfc795",
+  measurementId: "G-55Z6FQTENT"
+}; 
 
 firebase.initializeApp(config);
 
