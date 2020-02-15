@@ -1,7 +1,7 @@
 .button {
-  background: $blue;
-  border: none;
-  color: white;
+  background-color: white; 
+  color: whitesmoke; 
+  border-radius: 8px;
   display: inline-block;
   font-size: $font-size-large;
   font-weight: 300;
@@ -10,10 +10,47 @@
   text-decoration: none;
 }
 
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #65AFFF;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #65AFFF;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+}
+.button1:hover {
+  background-color: #65AFFF;
+  color: white;
+}
+
 .button--link {
   background: none;
 }
 
 .button--secondary {
-  background: #888;
+  background: white;
+}
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

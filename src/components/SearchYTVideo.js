@@ -6,6 +6,7 @@ import { SearchBar, VideoDetails, VideoList } from './VideosComponents';
 import { startAddVideo } from '../actions/saveVideo';
 import youtube from '../api/youtube';
 import VideoForm from '../components/VideoForm';
+import { Link } from 'react-router-dom';
 
 
 function SearchYoutubeVideo() {
@@ -18,7 +19,7 @@ function SearchYoutubeVideo() {
 		youtube.get('search', {
 			params: {
 				part: 'snippet',
-				maxResults: 5,
+				maxResults: 6,
 				key: 'AIzaSyDAv8rgsURZshC2ZG0HRVdMVD9hf8ikP8Y',
 				q: searchTerm,
 				type: 'video'
@@ -32,7 +33,7 @@ function SearchYoutubeVideo() {
 	}
 
 	useEffect(() => {
-		handleSubmit('Partner Hero');
+		handleSubmit('One Piece');
 	}, []);
 
 
@@ -52,6 +53,7 @@ function SearchYoutubeVideo() {
 					<Grid container spacing={10}>
 						<Grid item xs={12}>
 							<SearchBar onFormSubmit={handleSubmit} />
+						<div className="button2w"><Link className="button2" to="/search">Watch List</Link></div>	
 						</Grid>
 						<Grid item xs={8}>
 							<VideoDetails video={selectedVideo} />

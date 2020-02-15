@@ -17,7 +17,7 @@ function WidgetTime() {
   }
   return (
     <div>
-      <h3 className="header__title">{date.format("dddd MMM Do, YYYY")} {hour.toLocaleTimeString()}.</h3>
+      <h3 className="header__title">{date.format("dddd MMM Do, YYYY")}</h3>
     </div>
   );
     

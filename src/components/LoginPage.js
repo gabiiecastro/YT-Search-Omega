@@ -6,7 +6,7 @@ export const LoginPage = ({ startLogin }) => (
     <div className="box-layout">
         <div className="box-layout__box">
             <h1 className="box-layout__title">YouTube Library</h1>
-            <button className="button" onClick={startLogin}>Login with Google</button>
+            <button className="button1" onClick={startLogin}>Login with Google</button>
         </div>
     </div>
 );

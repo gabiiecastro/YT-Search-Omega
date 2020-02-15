@@ -59,7 +59,7 @@ export default class VideoForm extends React.Component {
               onChange={this.onDescriptionChange}
             />
             <div>
-              <button type="submit" className="button">Save Video</button> 
+              <button type="submit" className="button1">Save Video</button> 
             </div>         
           </form>
       )

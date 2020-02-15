@@ -15,14 +15,12 @@ function SearchBar({ onFormSubmit }) {
     }
 
     return(
-        <Paper elevation={6} style={{ padding: '25px '}}>
-            <form onSubmit={handleSubmit}>
-                <TextField fullWidth label="Search..."
-                    value={searchTerm} 
-                    onChange={handleChange}
-                />                    
-            </form>
-        </Paper>
+      <div className="wrap">
+        <form className="search" onSubmit={handleSubmit}>
+            <input type="text" className="searchTerm" placeholder="What are you looking for?" 
+            value={searchTerm} onChange={handleChange} />
+        </form>
+      </div>
     )
 }
 
