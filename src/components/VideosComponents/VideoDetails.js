@@ -1,6 +1,4 @@
 import React from 'react';
-import { Paper, Typography } from '@material-ui/core';
-import ReactPlayer from 'react-player';
 
 const VideoDetail = ({ video }) => {
 
@@ -9,16 +7,20 @@ const VideoDetail = ({ video }) => {
 
     const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`
     return (
+        
         <React.Fragment>  
-            <Paper elevation={6} style={{ height: '30% '}}>
-                <ReactPlayer  url={videoSrc} playing={true} width="100%" height="100%"/>
-            </Paper>
-            <Paper elevation={6} style={{ padding: '15px' }}>
-                <Typography variant="h4">{video.snippet.title} - {video.snippet.channelTitle}</Typography>
-                <Typography variant="subtitle1">{video.snippet.channelTitle}</Typography>
-                <Typography variant="subtitle2">{video.snippet.description}</Typography>
-            </Paper>
+		<div className="video-detail col-md-8">
+			<div className="embed-responsive embed-responsive-16by9">
+            <iframe src={videoSrc} playing={true} width="700" height="385" rameborder="0" allowfullscreen />
+            </div>
+			<div className="details">
+				<div>{video.snippet.title}</div>
+				<div>{video.snippet.description}</div>
+			</div>
+			
+		</div>
         </React.Fragment>
+     
     )
 }
 

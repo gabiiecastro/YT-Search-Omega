@@ -6,9 +6,7 @@ import selectVideos from '../selectors/videos';
 export const VideoList = (props) => (
     <div className="content-container">
       <div className="list-header">
-        <div className="show-for-mobile">Videos</div>
-        <div className="show-for-desktop">Video</div>
-        <div className="show-for-desktop">Preview</div>
+        <div className="show-for-desktop">Saved Videos</div>
       </div>
       <div className="list-body">
         {

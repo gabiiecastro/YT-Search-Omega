@@ -1,0 +1,38 @@
+.containerVD {
+    background-color:#e6e6e6;
+  }
+
+  .video-item img {
+      max-width:64px;
+  }
+  
+  .video-detail .details {
+      margin-top:10px;
+      padding:10px;
+      border:1px solid black;
+      border-radius:4px;
+  }
+  
+  .list-group-item {
+      cursor:pointer;
+  }
+  
+  .list-group-item:hover {
+      background-color:#eee;
+  }
+
+  .wrapVD {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .gridvd {
+    display: grid;
+    grid-template-columns: 80px 200px auto 30px;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
